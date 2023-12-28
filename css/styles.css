@@ -70,6 +70,11 @@ Designed By: Mizanur Rahman
 =========================================
 -----------------------------------------*/
 
+.visible {
+    display: block !important; /* Override any other display settings */
+}
+
+
 /*---------------------------------------
    2.1 GENERAL STYLES                
 -----------------------------------------*/

@@ -74,7 +74,7 @@
 =================================== */
 
 
-$(document).ready(function() {
+/* $(document).ready(function() {
     document.getElementById('contact').addEventListener('submit', function(event) {
         event.preventDefault();
     
@@ -95,8 +95,30 @@ $(document).ready(function() {
             // Show custom error message
             document.getElementById('custom-error-message').style.display = 'block';
         });
-    }, { passive:false });});
+    }, { passive:false });}); */
 
+
+    document.getElementById('contact').addEventListener('submit', function(event) {
+        event.preventDefault();
+    
+        fetch("/", {
+            method: "POST",
+            body: new FormData(event.target)
+        })
+        .then(response => {
+            if (response.ok) {
+                document.getElementById('custom-success-message').classList.add('visible');
+                document.getElementById('custom-error-message').classList.remove('visible');
+            } else {
+                document.getElementById('custom-error-message').classList.add('visible');
+                document.getElementById('custom-success-message').classList.remove('visible');
+            }
+        })
+        .catch(error => {
+            document.getElementById('custom-error-message').classList.add('visible');
+            document.getElementById('custom-success-message').classList.remove('visible');
+        });
+    });
 
 /* =================================
 ===  EXPAND COLLAPSE            ====
