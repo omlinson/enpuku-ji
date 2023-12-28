@@ -69,6 +69,34 @@
         effect: 'fadeScale',
     });
 
+/* =================================
+===  Netlify              ====
+=================================== */
+
+
+
+    document.getElementById('contact').addEventListener('submit', function(event) {
+        event.preventDefault();
+    
+        fetch("/", {
+            method: "POST",
+            body: new FormData(event.target)
+        })
+        .then(response => {
+            if (response.ok) {
+                // Show custom success message
+                document.getElementById('custom-success-message').style.display = 'block';
+            } else {
+                // Show custom error message
+                document.getElementById('custom-error-message').style.display = 'block';
+            }
+        })
+        .catch(error => {
+            // Show custom error message
+            document.getElementById('custom-error-message').style.display = 'block';
+        });
+    });
+
 
 /* =================================
 ===  EXPAND COLLAPSE            ====
