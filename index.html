@@ -1188,30 +1188,29 @@
 			<div class="expanded-contact-form">
 				
 				<!-- FORM -->
-				<form class="contact-form" id="contact" role="form">
-					
-					<!-- IF MAIL SENT SUCCESSFULLY -->
-					<h6 class="success">
-					<span class="olored-text icon_check"></span> Your message has been sent successfully. </h6>
-					
-					<!-- IF MAIL SENDING UNSUCCESSFULL -->
-					<h6 class="error">
-					<span class="colored-text icon_error-circle_alt"></span> E-mail must be valid and message must be longer than 1 character. </h6>
-					
+			
+
+				<form class="contact-form" id="contact" role="form" name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field">
+					<input type="hidden" name="form-name" value="contact" />
+					<input type="hidden" name="bot-field" />
+				
+					<!-- Success and error messages -->
+					<!-- ... -->
+				
 					<div class="field-wrapper col-md-6">
-						<input class="form-control input-box" id="cf-name" type="text" name="cf-name" placeholder="Your Name">
+						<input class="form-control input-box" id="cf-name" type="text" name="name" placeholder="Your Name">
 					</div>
 					
 					<div class="field-wrapper col-md-6">
-						<input class="form-control input-box" id="cf-email" type="email" name="cf-email" placeholder="Email">
+						<input class="form-control input-box" id="cf-email" type="email" name="email" placeholder="Email">
 					</div>
 					
 					<div class="field-wrapper col-md-12">
-						<input class="form-control input-box" id="cf-subject" type="text" name="cf-subject" placeholder="Subject">
+						<input class="form-control input-box" id="cf-subject" type="text" name="subject" placeholder="Subject">
 					</div>
 					
 					<div class="field-wrapper col-md-12">
-						<textarea class="form-control textarea-box" id="cf-message" rows="7" name="cf-message" placeholder="Your Message"></textarea>
+						<textarea class="form-control textarea-box" id="cf-message" rows="7" name="message" placeholder="Your Message"></textarea>
 					</div>
 					
 					<button class="btn standard-button" type="submit" id="cf-submit" name="submit" data-style="expand-left">Send Message</button>
