@@ -74,7 +74,7 @@
 =================================== */
 
 
-
+$(document).ready(function() {
     document.getElementById('contact').addEventListener('submit', function(event) {
         event.preventDefault();
     
@@ -95,7 +95,7 @@
             // Show custom error message
             document.getElementById('custom-error-message').style.display = 'block';
         });
-    }, { passive:false });
+    }, { passive:false });});
 
 
 /* =================================
