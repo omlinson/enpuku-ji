@@ -95,7 +95,7 @@
             // Show custom error message
             document.getElementById('custom-error-message').style.display = 'block';
         });
-    });
+    }, { passive:false });
 
 
 /* =================================
