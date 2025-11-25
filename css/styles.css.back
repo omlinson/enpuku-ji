@@ -889,10 +889,6 @@ object {
 .contact-form .success,
 .contact-form .error {
 	display: none;
-        color: #fff;
-}
-.contact-form .error {
-      color: #FA3A4A;
 }
 
 .contact-form .input-box,
