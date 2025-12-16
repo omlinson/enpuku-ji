@@ -382,7 +382,7 @@ header .vertical-registration-form {
 }
 
 header .home-screenshot {
-    margin-top: 70px;
+    margin-top: 10rem;
 }
 
 .navigation-header {
@@ -534,17 +534,17 @@ header .home-screenshot {
    4.4 SECTION: FEATURES                
 ==========================================*/
 .features {
-	margin-top: 35px;
+	margin-top: 15px;
 }
 
 .feature {
-	margin-top: 40px;
-	margin-bottom: 35px;
+	margin-top: 20px;
+	margin-bottom: 17px;
 }
 
 .feature .icon {
 	font-size: 50px;
-	margin-bottom: 30px;
+	margin-bottom: 15px;
 }
 
 .feature h4 {
@@ -563,7 +563,7 @@ header .home-screenshot {
 	overflow: auto;
 	border: 1px solid #e5e5e5;
 	border-radius: 3px;
-	margin-top: 40px;
+	margin-top: 20px;
 }
 
 .package .header {
