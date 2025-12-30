@@ -382,7 +382,7 @@ header .vertical-registration-form {
 }
 
 header .home-screenshot {
-    margin-top: 10rem;
+	opacity: 50%;
 }
 
 .navigation-header {
